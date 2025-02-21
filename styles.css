@@ -16,7 +16,9 @@ header {
     text-align: center; /* Centra el texto */
     transition: background-color 0.5s, color 0.5s; /* Transición para el cambio de color */
 }
-
+.Title{
+    color: white;
+}
 /* Estilos para la navegación */
 nav {
     position: relative; /* Posicionamiento relativo para el contenedor de navegación */
