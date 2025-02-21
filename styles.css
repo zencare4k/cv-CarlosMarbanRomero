@@ -24,6 +24,14 @@ nav {
     position: relative; /* Posicionamiento relativo para el contenedor de navegación */
 }
 
+/* Estilos para la imagen */
+.yo {
+    width: 150px; /* Ajusta el tamaño de la imagen */
+    border-radius: 50%; /* Hace la imagen circular */
+    display: block; /* Centra la imagen horizontalmente */
+    margin: 20px auto; /* Añade margen superior e inferior y centra la imagen */
+}
+
 /* Estilos para el botón de menú en dispositivos móviles */
 .menu-toggle {
     display: none; /* Oculta el botón por defecto */
@@ -86,11 +94,38 @@ nav ul li a:hover::after {
 }
 
 /* Estilos para los encabezados h1 y h2 */
-h1, h2 {
-    color: #2c3e50; /* Color del texto */
+h1 {
+    color: #ffffff; /* Color del texto */
     transition: color 0.5s; /* Transición para el cambio de color */
 }
 
+/* Estilos para las imágenes de las listas */
+#skills ul li img {
+    padding: 20px;
+    width: 90px; /* Ajusta el tamaño de las imágenes */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    vertical-align: middle; /* Alinea verticalmente las imágenes con el texto */
+    margin-right: 10px; /* Añade espacio entre la imagen y el texto */
+}
+
+/* Estilos para pantallas de hasta 768px de ancho */
+@media only screen and (max-width: 768px) {
+    /* Estilos para las imágenes de las listas en pantallas pequeñas */
+    #skills ul li img {
+        width: 25px; /* Ajusta el tamaño de las imágenes */
+    }
+}
+
+/* Estilos para pantallas de hasta 480px de ancho */
+@media only screen and (max-width: 480px) {
+    /* Estilos para las imágenes de las listas en pantallas muy pequeñas */
+    #skills ul li img {
+        width: 20px; /* Ajusta el tamaño de las imágenes */
+    }
+}
+h2{
+    color: #ff6347
+}
 /* Estilos para las secciones */
 section {
     margin: 20px; /* Margen alrededor de las secciones */
@@ -194,6 +229,11 @@ footer {
     .container {
         padding: 10px; /* Relleno del contenedor */
     }
+
+    /* Estilos para la imagen en pantallas pequeñas */
+    #yo {
+        width: 100px; /* Ajusta el tamaño de la imagen */
+    }
 }
 
 /* Estilos para pantallas de hasta 480px de ancho */
@@ -216,5 +256,10 @@ footer {
 
     section {
         padding: 5px; /* Relleno reducido */
+    }
+
+    /* Estilos para la imagen en pantallas muy pequeñas */
+    #yo {
+        width: 80px; /* Ajusta el tamaño de la imagen */
     }
 }
