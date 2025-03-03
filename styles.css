@@ -12,13 +12,12 @@ body {
 header {
     background: #333; /* Color de fondo del encabezado */
     color: white; /* Color del texto del encabezado */
-    padding: 10px 0; /* Relleno superior e inferior */
+    padding: 20px 0; /* Relleno superior e inferior */
     text-align: center; /* Centra el texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del encabezado */
     transition: background-color 0.5s, color 0.5s; /* Transición para el cambio de color */
 }
-.Title{
-    color: white;
-}
+
 /* Estilos para la navegación */
 nav {
     position: relative; /* Posicionamiento relativo para el contenedor de navegación */
@@ -30,6 +29,12 @@ nav {
     border-radius: 50%; /* Hace la imagen circular */
     display: block; /* Centra la imagen horizontalmente */
     margin: 20px auto; /* Añade margen superior e inferior y centra la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra de la imagen */
+    transition: transform 0.3s; /* Transición para la transformación */
+}
+
+.yo:hover {
+    transform: scale(1.1); /* Escala la imagen al pasar el ratón */
 }
 
 /* Estilos para el botón de menú en dispositivos móviles */
@@ -99,6 +104,11 @@ h1 {
     transition: color 0.5s; /* Transición para el cambio de color */
 }
 
+h2 {
+    color: #ff6347; /* Color del texto */
+    transition: color 0.5s; /* Transición para el cambio de color */
+}
+
 /* Estilos para las imágenes de las listas */
 #skills ul li img {
     padding: 20px;
@@ -123,13 +133,16 @@ h1 {
         width: 20px; /* Ajusta el tamaño de las imágenes */
     }
 }
-h2{
-    color: #ff6347
-}
+
 /* Estilos para las secciones */
 section {
     margin: 20px; /* Margen alrededor de las secciones */
     text-align: center; /* Centra el texto */
+    padding: 20px; /* Relleno de las secciones */
+    background: #fff; /* Fondo blanco para las secciones */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra de las secciones */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: background-color 0.5s, color 0.5s; /* Transición para el cambio de color */
 }
 
 /* Estilos para las listas dentro de las secciones */
@@ -201,6 +214,11 @@ footer {
     background-color: #333; /* Color de fondo al pasar el ratón en modo oscuro */
 }
 
+.dark-mode section {
+    background-color: #333; /* Color de fondo de las secciones en modo oscuro */
+    color: #e0e0e0; /* Color del texto de las secciones en modo oscuro */
+}
+
 /* Estilos para pantallas de hasta 768px de ancho */
 @media only screen and (max-width: 768px) {
     body {
@@ -231,7 +249,7 @@ footer {
     }
 
     /* Estilos para la imagen en pantallas pequeñas */
-    #yo {
+    .yo {
         width: 100px; /* Ajusta el tamaño de la imagen */
     }
 }
@@ -259,7 +277,7 @@ footer {
     }
 
     /* Estilos para la imagen en pantallas muy pequeñas */
-    #yo {
+    .yo {
         width: 80px; /* Ajusta el tamaño de la imagen */
     }
 }

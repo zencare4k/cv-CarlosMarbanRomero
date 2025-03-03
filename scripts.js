@@ -9,8 +9,10 @@ function toggleDarkMode() {
     const darkModeToggle = document.querySelector('.dark-mode-toggle');
     if (body.classList.contains('dark-mode')) {
         darkModeToggle.textContent = '🌞'; // Sol para modo oscuro
+        localStorage.setItem('darkMode', 'enabled');
     } else {
         darkModeToggle.textContent = '🌜'; // Luna para modo claro
+        localStorage.setItem('darkMode', 'disabled');
     }
 }
 
@@ -18,7 +20,9 @@ function toggleDarkMode() {
 document.addEventListener('DOMContentLoaded', () => {
     const body = document.body;
     const darkModeToggle = document.querySelector('.dark-mode-toggle');
-    if (body.classList.contains('dark-mode')) {
+    const darkMode = localStorage.getItem('darkMode');
+    if (darkMode === 'enabled') {
+        body.classList.add('dark-mode');
         darkModeToggle.textContent = '🌞'; // Sol para modo oscuro
     } else {
         darkModeToggle.textContent = '🌜'; // Luna para modo claro
